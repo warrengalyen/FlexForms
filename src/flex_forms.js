@@ -460,6 +460,9 @@
 
             nextForm++;
 
+            // Deep clone the options.
+            options = JSON.parse(JSON.stringify(options));
+
             // Let form handlers modify the options and state.
             DispatchEvent('init', [state, options]);
 
