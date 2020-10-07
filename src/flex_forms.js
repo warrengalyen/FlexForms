@@ -658,7 +658,7 @@
                     case 'static': {
                         state.html += '<div class="formitemdata">';
                         state.html += '<div class="staticwrap"' + (field.hasOwnProperty('width') ? ' style="' + ($this.settings.responsive ? 'max-' : '') + 'width: ' + EscapeHTML(field.width) + ';"' : '') + '>' + EscapeHTML(field.value) + '</div>';
-                        state.html += '</div>';
+                        state.html += '</div>';``
                         break;
                     }
                     case 'text':
@@ -689,7 +689,7 @@
                         stylewidth = (field.hasOwnProperty('width') ? ' style="' + ($this.settings.responsive ? 'max-' : '') + 'width: ' + EscapeHTML(field.width) + ';"' : '');
                         styleheight = (field.hasOwnProperty('height') ? ' style="height: ' + EscapeHTML(field.height) + ';"' : '');
 
-                        if (!field.hasOwnProperty('select')) field.select = array();
+                        if (!field.hasOwnProperty('select')) field.select = {};
                         else if (typeof field.select === 'string') {
                             var tempSelect = {};
                             tempSelect[field.select] = true;
