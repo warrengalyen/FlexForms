@@ -4,6 +4,8 @@
 FlexForms is a powerful HTML forms generator/builder Javascript class to output HTML forms using JSON-style arrays.
 FlexForms.Dialog adds a moveable, resizeable, modal dialog to FlexForms.
 
+![FlexForms Dialog](screenshot.png)
+
 Features
 --------
 
