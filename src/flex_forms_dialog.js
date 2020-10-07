@@ -256,6 +256,7 @@
 
             elems.mainWrap.style.left = currLeft + 'px';
             elems.mainWrap.style.top = currTop + 'px';
+            elems.mainWrap.style.height = (dialogHeight - parseFloat(currDialogStyle.marginTop) - parseFloat(currDialogStyle.marginBottom)) + 'px';
 
             DispatchEvent('position', elems.mainWrap);
         };
@@ -269,6 +270,7 @@
 
                 elems.mainWrap.style.left = ((screenWidth / 2) - (dialogWidth / 2)) + 'px';
                 elems.mainWrap.style.top = ((screenHeight / 2) - (dialogHeight / 2)) + 'px';
+                elems.mainWrap.style.height = (dialogHeight - parseFloat(currDialogStyle.marginTop) - parseFloat(currDialogStyle.marginBottom)) + 'px';
 
                 DispatchEvent('position', elems.mainWrap);
             }
