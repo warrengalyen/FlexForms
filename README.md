@@ -67,7 +67,7 @@ The most common use-case is to use the FlexForms.Dialog class to generate and di
 console.log(formVars);
 			this.Destroy();
 		},
-		onclose: function() {
+		onClose: function() {
 console.log('Close');
 			this.Destroy();
 		}

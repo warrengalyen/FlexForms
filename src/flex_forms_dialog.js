@@ -77,10 +77,10 @@
         };
 
         // Register settings callbacks.
-        if ($this.settings.onposition) $this.addEventListener('position', $this.settings.onposition);
-        if ($this.settings.onsubmit) $this.addEventListener('submit', $this.settings.onsubmit);
-        if ($this.settings.onclose) $this.addEventListener('close', $this.settings.onclose);
-        if ($this.settings.ondestroy) $this.addEventListener('destroy', $this.settings.ondestroy);
+        if ($this.settings.onPosition) $this.addEventListener('position', $this.settings.onPosition);
+        if ($this.settings.onSubmit) $this.addEventListener('submit', $this.settings.onSubmit);
+        if ($this.settings.onClose) $this.addEventListener('close', $this.settings.onClose);
+        if ($this.settings.onDestroy) $this.addEventListener('destroy', $this.settings.onDestroy);
 
         var elems = {
             mainWrap: CreateNode('div', ['ff_dialogwrap'], { tabIndex: 0 }, { position: 'fixed', left: '-9999px' }),
@@ -100,7 +100,7 @@
         elems.title.innerHTML = EscapeHTML(Translate($this.settings.title));
 
         elems.titleWrap.appendChild(elems.title);
-        if (!this.settings.onClose || $this.settings.backgroundCloses) {
+        if ($this.settings.onClose || $this.settings.backgroundCloses) {
             elems.titleWrap.appendChild(elems.closeButton);
         }
         elems.innerWrap.appendChild(elems.titleWrap);
